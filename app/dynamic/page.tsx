@@ -2,6 +2,9 @@ import Link from "next/link";
 import Form from "../../components/Form";
 import fs from 'fs/promises'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export default async function Dynamic() {
   let data = '{}';
   try {
